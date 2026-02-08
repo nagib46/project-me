@@ -4,7 +4,7 @@ import { AuthContext } from "../../context/AuthProvider";
 import Swal from 'sweetalert2'; // [অবশ্যই ইমপোর্ট থাকতে হবে]
 import toast from "react-hot-toast";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../../firebase/firebase.config";
+import { db } from "../../firebase/Firebase.config.js";
 
 const AdminLogin = () => {
     const { signIn } = useContext(AuthContext);

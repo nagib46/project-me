@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 import toast from "react-hot-toast"; // শুধু টোস্ট রাখা হলো (এটা পেজ লোড আটকায় না)
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebase/firebase.config";
+import { db } from "../firebase/Firebase.config.js";
 
 const Login = () => {
     const { signIn, user } = useContext(AuthContext);
